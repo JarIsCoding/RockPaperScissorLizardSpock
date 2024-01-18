@@ -1,0 +1,100 @@
+@font-face {
+    font-family: amiko;
+    src: url(/fonts/Amiko/Amiko-Regular.ttf);
+}
+
+@font-face {
+    font-family: amikoB;
+    src: url(/fonts/Amiko/Amiko-Bold.ttf);
+}
+
+@font-face {
+    font-family: archivo;
+    src: url(/fonts/Archivo/static/Archivo-Regular.ttf);
+}
+
+.maincolor{
+    background-color: #A2B1FF;
+}
+
+.secondcolor {
+    color: #6E9FFF;
+}
+
+.fifty {
+    font-size: 50px;
+    color: white;
+}
+
+.thirtyf{
+    font-size: 35px;
+    color: white;
+}
+
+.twenty{
+    font-size: 20px;
+    color:  white;
+}
+
+.amikoB{
+    font-family: amikoB;
+}
+
+.amiko{
+    font-family: amiko;
+}
+
+.archivo{
+    font-family: archivo;
+}
+
+.padtop1{
+    padding-top: 250px;
+}
+.padtop2{
+    padding-top: 200px;
+}
+.padtop3{
+    padding-top: 100px;
+}
+.padtop4{
+    padding-top: 50px;
+}
+.margins{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.imghover{
+    cursor: pointer;
+}
+
+.button1{
+    width: 300px;
+    height: 85px;
+    border-top: none;
+    border-right: none;
+    background-color: #A2B1FF;
+    color: white;
+    border-bottom: #A2B1FF, 100px;
+    
+}
+.button2{
+    width: 100px;
+    height: 100px;
+    border-width: 0px;
+    background-color: #A2B1FF;
+}
+.button3{
+    width: 150px;
+    height: 85px;
+    border-top: none;
+    border-right: none;
+    background-color: #A2B1FF;
+    color: white;
+    border-bottom: #A2B1FF, 100px;   
+}
+
+.backgroundbox{
+    background-color: #6E9FFF;
+}
