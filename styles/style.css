@@ -76,14 +76,14 @@
     border-right: none;
     background-color: #A2B1FF;
     color: white;
-    border-bottom: #A2B1FF, 100px;
-    
+    border-color: #6E9FFF;    
+    border-left-width: 15px;
+    border-bottom-width: 10px;
 }
 .button2{
     width: 100px;
     height: 100px;
     border-width: 0px;
-    background-color: #A2B1FF;
 }
 .button3{
     width: 150px;
@@ -92,9 +92,23 @@
     border-right: none;
     background-color: #A2B1FF;
     color: white;
-    border-bottom: #A2B1FF, 100px;   
+    border-color: #6E9FFF;    
+    border-left-width: 15px;
+    border-bottom-width: 10px;
+}
+.button4{
+    margin-top: 180px;
+    width: 150px;
+    height: 150px;
+    background-color: #6E9FFF;
+    color: white;
 }
 
 .backgroundbox{
     background-color: #6E9FFF;
+    height: 470px;
+}
+
+.hide{
+    display: none !important;
 }
