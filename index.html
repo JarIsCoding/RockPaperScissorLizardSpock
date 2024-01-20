@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>RPSLS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles/style.css">
@@ -32,11 +32,40 @@
                 </div>
                 <div class="col px-0"></div>
             </div>
-            <div class="row text-center fifty padtop2">
-                <div class="col">
-                    <button id="rulesPageBtn" class="button1">
-                        Rules
-                    </button>
+            <div class="col text-center padtop2">
+                <button type="button" class="button1" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                    <p class="fifty">
+                        How to play
+                    </p>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fifty fs-5" id="exampleModalLabel">RULES</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-start thirtyf">
+                                Rock beats scissors / lizard
+                                <br>
+                                Paper beats rock / Spock
+                                <br>
+                                Scissors beats paper / lizard
+                                <br>
+                                Lizard beats Spock / paper
+                                <br>
+                                Spock beats scissors / rock
+                                <img src="/assets/Rockpaperscissorslizardspock.png" class="img-fluid" height="200px" alt="">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -66,7 +95,7 @@
                 </div>
                 <div class="col-12 padtop2">
                     <button id="FT5" class="button1">
-                        First To 5
+                        First To 4
                     </button>
                 </div>
             </div>
@@ -92,7 +121,7 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body text-start">
+                                <div class="modal-body text-start thirtyf">
                                     Rock beats scissors / lizard
                                     <br>
                                     Paper beats rock / Spock
@@ -102,6 +131,7 @@
                                     Lizard beats Spock / paper
                                     <br>
                                     Spock beats scissors / rock
+                                    <img src="/assets/Rockpaperscissorslizardspock.png" class="img-fluid" height="200px" alt="">
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -137,7 +167,7 @@
                     <p id="p1txt" class="thirtyf">
                         ...
                     </p>
-                    <img id="choseimg" src="./assets/rock.png" width="100px" class="img-fluid imghover" alt="">
+                    <img id="choseimg" src="./assets/Untitled.png" width="100px" class="img-fluid imghover" alt="">
                     <div class="row pt-3 ps-3">
                         <div class="col">
                             <img id="P1rock" src="./assets/rock.png" width="100px" class="img-fluid imghover" alt="">
@@ -190,7 +220,7 @@
                     <p id="p2txt" class="thirtyf">
                         ...
                     </p>
-                    <img id="choseimg2" src="./assets/rock.png" width="100px" class="img-fluid imghover" alt="">
+                    <img id="choseimg2" src="./assets/Untitled.png" width="100px" class="img-fluid imghover" alt="">
 
                     <div id="p2side" class="">
                         <div class="row pt-3 ps-3">
@@ -281,12 +311,12 @@
                 </button>
             </div>
             <div class="col text-end">
-                <button type="button" class="btn button2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn button2" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                     <img src="/assets/Help.png" width="100px" alt="">
                 </button>
 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
@@ -295,7 +325,7 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
-                            <div class="modal-body text-start">
+                            <div class="modal-body text-start thirtyf">
                                 Rock beats scissors / lizard
                                 <br>
                                 Paper beats rock / Spock
@@ -305,6 +335,8 @@
                                 Lizard beats Spock / paper
                                 <br>
                                 Spock beats scissors / rock
+                                <br>
+                                <img src="/assets/Rockpaperscissorslizardspock.png" class="img-fluid" height="200px" alt="">
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

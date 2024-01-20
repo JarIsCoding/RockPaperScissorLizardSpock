@@ -95,7 +95,7 @@ FT3.addEventListener("click", () => {
 })
 
 FT5.addEventListener("click", () => {
-    totalRounds = 5;
+    totalRounds = 4;
     maxrounds = 7;
     round.innerText = (currentRound + "/" + maxrounds)
     startBtn.classList.remove("hide");
@@ -182,6 +182,8 @@ function fullReset() {
     currentRound = 0;
     maxrounds = 0;
     p2side.classList.remove("hide");
+    choseimg.src = "./assets/Untitled.png"
+    choseimg2.src = "./assets/Untitled.png"
 }
 
 const randomapi = async () => {
@@ -214,30 +216,36 @@ function p2Win() {
 
 function checkWin() {
     if (player1Choice === "rock") {
+        choseimg.src = "./assets/rock.png"
         switch (player2Choice) {
             case ("rock"):
+                choseimg2.src = "./assets/rock.png"
                 result.innerText = "Its a Tie! Both chose Rock";
                 resetRound()
                 break;
             case ("paper"):
+                choseimg2.src = "./assets/paper.png"
                 p1txt.innerText = "You lost a point!";
                 p2txt.innerText = "You won a point!";
                 result.innerText = "Paper beats Rock!";
                 p2Win();
                 break;
             case ("scissors"):
+                choseimg2.src = "./assets/scissors.png"
                 p1txt.innerText = "You won a point!";
                 p2txt.innerText = "You lost a point!";
                 result.innerText = "Rock beats Scissors!";
                 p1Win();
                 break;
             case ("lizard"):
+                choseimg2.src = "./assets/lizard.png"
                 p1txt.innerText = "You won a point!";
                 p2txt.innerText = "You lost a point!";
                 result.innerText = "Rock beats Lizard!";
                 p1Win();
                 break;
             case ("spock"):
+                choseimg2.src = "./assets/spock.png"
                 p1txt.innerText = "You lost a point!";
                 p2txt.innerText = "You won a point!";
                 result.innerText = "Spock beats Rock!";
@@ -251,31 +259,37 @@ function checkWin() {
 
     //p1 picks paper
     if (player1Choice === "paper") {
+        choseimg.src = "./assets/paper.png";
         switch (player2Choice) {
             case ("rock"):
+                choseimg2.src = "./assets/rock.png"
                 p1txt.innerText = "You got a point!";
                 p2txt.innerText = "Better luck next time!";
                 result.innerText = "Paper beats Rock!";
                 p1Win();
                 break;
             case ("paper"):
+                choseimg2.src = "./assets/paper.png"
                 result.innerText = "Its a Tie! Both chose Paper";
                 resetRound();
 
                 break;
             case ("scissors"):
+                choseimg2.src = "./assets/scissors.png"
                 p2txt.innerText = "Better luck next time!";
                 p1txt.innerText = "You got a point!";
                 result.innerText = "Scissors beats paper!";
                 p2Win();
                 break;
             case ("lizard"):
+                choseimg2.src = "./assets/lizard.png"
                 p2txt.innerText = "Better luck next time!";
                 p1txt.innerText = "You got a point!";
                 result.innerText = "Lizard beats paper!";
                 p2Win();
                 break;
             case ("spock"):
+                choseimg2.src = "./assets/spock.png"
                 p1txt.innerText = "You got a point!";
                 p2txt.innerText = "Better luck next time!";
                 result.innerText = "Paper beats Spock!";
@@ -290,31 +304,37 @@ function checkWin() {
 
     //p1 picks scissors
     if (player1Choice === "scissors") {
+        choseimg.src = "./assets/scissors.png";
         switch (player2Choice) {
             case ("rock"):
+                choseimg2.src = "./assets/rock.png"
                 p2txt.innerText = "Better luck next time!";
                 p2txt.innerText = "You got a point!";
                 result.innerText = "Rock beats Scissors!";
                 p2Win();
                 break;
             case ("paper"):
+                choseimg2.src = "./assets/paper.png"
                 p2txt.innerText = "You got a point!";
                 p2txt.innerText = "Better luck next time!";
                 result.innerText = "Scissors beats paper!";
                 p1Win();
                 break;
             case ("scissors"):
+                choseimg2.src = "./assets/scissors.png"
                 result.innerText = "Its a Tie! Both chose Scissors";
                 resetRound()
 
                 break;
             case ("lizard"):
+                choseimg2.src = "./assets/lizard.png"
                 p2txt.innerText = "You got a point!";
                 p2txt.innerText = "Better luck next time!";
                 result.innerText = "Scissors beats Lizard!";
                 p1Win();
                 break;
             case ("spock"):
+                choseimg2.src = "./assets/spock.png"
                 p2txt.innerText = "Better luck next time!";
                 p2txt.innerText = "You got a point!";
                 result.innerText = "Spock beats scissors!";
@@ -327,31 +347,37 @@ function checkWin() {
     }
     // //p1 picks Lizard
     if (player1Choice === "lizard") {
+        choseimg.src = "./assets/lizard.png";
         switch (player2Choice) {
             case ("rock"):
+                choseimg2.src = "./assets/rock.png"
                 p2txt.innerText = "You got a point!";
                 p2txt.innerText = "Better luck next time!";
                 result.innerText = "Rock beats Lizard!";
                 p2Win();
                 break;
             case ("paper"):
+                choseimg2.src = "./assets/paper.png"
                 p2txt.innerText = "You got a point!";
                 p2txt.innerText = "Better luck next time!";
                 result.innerText = "Paper beats Lizard!";
                 p1Win();
                 break;
             case ("scissors"):
+                choseimg2.src = "./assets/scissors.png"
                 p2txt.innerText = "Better luck next time!";
                 p2txt.innerText = "You got a point!";
                 result.innerText = "Scissors beats Lizard!";
                 p2Win();
                 break;
             case ("lizard"):
+                choseimg2.src = "./assets/lizard.png"
                 result.innerText = "Its a Tie! Both chose Lizard";
                 resetRound()
 
                 break;
             case ("spock"):
+                choseimg2.src = "./assets/spock.png"
                 p2txt.innerText = "You got a point!";
                 p2txt.innerText = "Better luck next time!";
                 result.innerText = "Lizard beats Spock!";
@@ -364,32 +390,38 @@ function checkWin() {
 
     // //p1 picks Spock
     if (player1Choice === "spock") {
+        choseimg.src = "./assets/spock.png";
         switch (player2Choice) {
             case ("rock"):
+                choseimg2.src = "./assets/rock.png"
                 p2txt.innerText = "You got a point!";
                 p2txt.innerText = "Better luck next time!";
                 result.innerText = "Spock beats Rock!";
                 p1Win();
                 break;
             case ("paper"):
+                choseimg2.src = "./assets/paper.png"
                 p2txt.innerText = "Better luck next time!";
                 p2txt.innerText = "You got a point!";
                 result.innerText = "Paper beats Spock!";
                 p2Win();
                 break;
             case ("scissors"):
+                choseimg2.src = "./assets/scissors.png"
                 p2txt.innerText = "You got a point!";
                 p2txt.innerText = "Better luck next time!";
                 result.innerText = "Spock beats Scissors!";
                 p1Win();
                 break;
             case ("lizard"):
+                choseimg2.src = "./assets/lizard.png"
                 p2txt.innerText = "Better luck next time!";
                 p2txt.innerText = "You got a point!";
                 result.innerText = "Lizard beats Spock!";
                 p2Win();
                 break;
             case ("spock"):
+                choseimg2.src = "./assets/spock.png"
                 result.innerText = "Its a Tie! Both chose Spock";
                 resetRound()
 
