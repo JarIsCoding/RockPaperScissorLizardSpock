@@ -81,7 +81,7 @@ OneCpu.addEventListener("click", () => {
 
 FT1.addEventListener("click", () => {
     totalRounds = 1;
-    round.innerText = (currentRound + "/" + totalRounds)
+    round.innerText = (currentRound + "/1")
     startBtn.classList.remove("hide");
     openGame();
 })
@@ -436,12 +436,14 @@ function checkEnd() {
     if (playerOnePoint === totalRounds) {
         p1txt.innerText = "Player 1 Wins!";
         p2txt.innerText = "Player 2 Loses!"
+        round.innerText = "GGs"
         startBtn.classList.add("hide");
         endResult.innerText = "Good Game! Go back to replay!"
     }
     else if (playerTwoPoint === totalRounds) {
         p1txt.innerText = "Player 1 Loses!";
         p2txt.innerText = "Player 2 Wins!";
+        round.innerText = "GGs"
         startBtn.classList.add("hide");
         endResult.innerText = "Good Game! Go back to replay!"
     }
